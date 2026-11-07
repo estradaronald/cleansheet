@@ -1,0 +1,294 @@
+
+/* ========================================
+   CLEANSHEET
+   Responsive Design
+======================================== */
+
+
+/* ========================================
+   LARGE SCREENS
+======================================== */
+
+@media (min-width: 1600px) {
+
+    .dashboard-content {
+        padding-left: 52px;
+        padding-right: 52px;
+    }
+
+}
+
+
+/* ========================================
+   LAPTOPS
+======================================== */
+
+@media (max-width: 1200px) {
+
+    .dashboard-content {
+        padding: 35px 28px 40px;
+        gap: 32px;
+    }
+
+    .topbar {
+        padding: 0 28px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* ========================================
+   TABLETS
+======================================== */
+
+@media (max-width: 900px) {
+
+    :root {
+        --sidebar-width: 190px;
+    }
+
+    .sidebar {
+        padding: 22px 12px;
+    }
+
+    .brand {
+        padding: 0 7px;
+        font-size: 17px;
+    }
+
+    .nav-link {
+        gap: 9px;
+        padding: 0 9px;
+        font-size: 12px;
+    }
+
+    .dashboard-content {
+        padding: 30px 22px 35px;
+    }
+
+    .topbar {
+        padding: 0 22px;
+    }
+
+    .footer {
+        padding: 18px 22px;
+    }
+
+    .page-heading h1 {
+        font-size: 26px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 640px) {
+
+    .app-container {
+        display: block;
+    }
+
+    /* Sidebar */
+
+    .sidebar {
+        position: relative;
+
+        width: 100%;
+        min-width: 0;
+        height: auto;
+
+        padding: 13px 16px;
+
+        border-right: none;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .brand {
+        margin-bottom: 13px;
+        padding: 0;
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .nav-label {
+        display: none;
+    }
+
+    .nav-link {
+        min-height: 34px;
+        padding: 0 9px;
+        font-size: 11px;
+        gap: 6px;
+    }
+
+    .nav-link i {
+        width: 14px;
+        height: 14px;
+    }
+
+    .sidebar-bottom {
+        display: none;
+    }
+
+
+    /* Main Content */
+
+    .main-content {
+        width: 100%;
+        min-height: calc(100vh - 110px);
+        margin-left: 0;
+    }
+
+
+    /* Topbar */
+
+    .topbar {
+        height: 52px;
+        min-height: 52px;
+        padding: 0 18px;
+    }
+
+    .status-indicator {
+        font-size: 10px;
+    }
+
+
+    /* Dashboard */
+
+    .dashboard-content {
+        padding: 29px 18px 35px;
+        gap: 29px;
+    }
+
+    .page-heading h1 {
+        font-size: 25px;
+        letter-spacing: -0.8px;
+    }
+
+    .page-description {
+        font-size: 12px;
+        max-width: 340px;
+    }
+
+
+    /* Section Headings */
+
+    .section-heading {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .section-heading h2 {
+        font-size: 16px;
+    }
+
+
+    /* Upload */
+
+    .upload-area {
+        min-height: 190px;
+        padding: 24px 14px;
+    }
+
+    .upload-area h3 {
+        font-size: 14px;
+    }
+
+
+    /* Statistics */
+
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .stat-card {
+        padding: 15px 13px;
+    }
+
+    .stat-top {
+        font-size: 11px;
+        margin-bottom: 12px;
+    }
+
+    .stat-card strong {
+        font-size: 23px;
+    }
+
+    .stat-card small {
+        font-size: 9px;
+    }
+
+
+    /* Preview */
+
+    .preview-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .table-container {
+        min-height: 210px;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        padding: 16px 18px;
+        gap: 10px;
+        font-size: 10px;
+    }
+
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 380px) {
+
+    .dashboard-content {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+    .topbar {
+        padding: 0 13px;
+    }
+
+    .nav-link {
+        font-size: 10px;
+        padding: 0 7px;
+    }
+
+    .stats-grid {
+        gap: 8px;
+    }
+
+    .stat-card {
+        padding: 13px 10px;
+    }
+
+    .stat-card strong {
+        font-size: 21px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
